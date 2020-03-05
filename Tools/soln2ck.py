@@ -1,7 +1,7 @@
 from __future__ import print_function
 from __future__ import division
 
-import os
+import sys,os
 from string import Template
 
 import cantera as ct
@@ -211,7 +211,7 @@ def write(solution):
         phase_unknown_list = []
 
         #write data for each species in the Solution object
-        for sp_index in xrange(len(trimmed_solution.species_names)):
+        for sp_index in range(len(trimmed_solution.species_names)):
             d = 3.33564e-30 #1 debye = d coulomb-meters
             species = trimmed_solution.species(sp_index)
             name = str(trimmed_solution.species(sp_index).name)
@@ -256,7 +256,7 @@ def write(solution):
         f.write(section_break)
         f.write('REACTIONS\n')
         #write data for each reaction in the Solution Object
-        for reac_index in xrange(len(trimmed_solution.reaction_equations())):
+        for reac_index in range(len(trimmed_solution.reaction_equations())):
             equation_string = str(trimmed_solution.reaction_equation(reac_index))
             equation_string = eliminate(equation_string, ' ', 'single')
             equation_object = trimmed_solution.reaction(reac_index)
@@ -351,3 +351,21 @@ def write(solution):
                 f.write(duplicate_line)
         f.write('END')
     return output_file_name
+
+def main():
+    
+    help = " Usage: \n"+"   python3 soln2ck.py -cti <CanteraInputFile>"
+    if '-cti' in sys.argv:
+        cti = sys.argv[sys.argv.index('-cti')+1]
+    else:
+        print(help)
+        sys.exit()
+
+    gas = ct.Solution(cti)
+    
+    output_file = write(gas)
+
+    print(" Done converting "+cti+" to chemkin files"+output_file)
+
+if __name__=="__main__":
+    main()
