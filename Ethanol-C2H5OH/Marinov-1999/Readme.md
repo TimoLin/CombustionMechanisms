@@ -10,4 +10,10 @@ cd Cantera
 ck2cti --input=../Chemkin/ethanol.mech --thermo=../Chemkin/ethanol_thermo.dat --transport=../Chemkin/ethanol_trans.dat  --output ethanol.cti --permissive
 ```
 - ScanMan version 4.2.1
-
+```shell
+cd FlameMaster
+# Create chemkin and thermo data files from ethanol.cti. Rename the output file 
+python3 ../../../Tools/soln2ck.py  -cti ../Cantera/ethanol.cti
+# Run ScanMan
+ScanMan -i ethanol-clean.inp  -t thermo-clean.inp  -m ethanol_trans.dat  -f chemkin
+```
