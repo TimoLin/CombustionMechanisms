@@ -22,6 +22,9 @@ Three kinds of format is provided:
 |   CH4  |  Gri-Mech 3.0 |    53   |    325    |      YES     | Detailed |
 |        | Gri-Mech 2.11 |    49   |    279    |      YES     | Detailed |
 | C2H5OH |  Marinov 1999 |    57   |    383    |      NO      | Detailed |
+| C7H16  |You & Wang 2007|    65   |           |      NO      | Detailed |
+|        |    UCSD-NOx   |    75   |    344    |      YES     | Detailed |
+
 
 
 ## Disclamer
