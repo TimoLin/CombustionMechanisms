@@ -14,6 +14,7 @@ Three kinds of format is provided:
 [四川大学燃烧动力学中心](http://test.vlcc.cn/home)  
 [ZhangYan's Repository](https://github.com/ZhangYanTJU/chemicalMechanisms)  
 [Jiweiqi's Repository](https://github.com/jiweiqi/CollectionOfMechanisms)  
+[NUI Galway C3](https://www.universityofgalway.ie/combustionchemistrycentre/mechanismdownloads/)  
 
 ## Summary
 
