@@ -122,15 +122,3 @@ C2H3CHO            2   357.000     5.176     0.000     0.000     1.000
 iC4H7O             2   450.000     5.500     0.000     0.000     1.000 ! JAM
 CH3CHO             2   436.000     3.970     0.000     0.000     2.000
 CH3CO              2   436.000     3.970     0.000     0.000     2.000
-                                                                                
- 1-15: Species name                                                             
- 16-80: Molecular parameters                                                    
-        molecule index: 0 = atom, 1= linear molec.                              
-                        2 = nonlinear molec.                                    
-        L-J potential well depth, e/kb (K)                                      
-        L-J collision diameter, s,                                             
-        Dipole moment, f, Debye                                                 
-        Polarizability, `, 2                                                   
-        Rotational relaxation number, Zrot at 298K                              
-        Comments                                                                
-                                                                                

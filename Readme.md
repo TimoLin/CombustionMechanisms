@@ -27,6 +27,7 @@ Three kinds of format is provided:
 | C4H10  | UCSD          |    58   |    270    |      NO      | Detailed | 
 | C7H16  |You & Wang 2007|    65   |    315    |      NO      | Detailed |
 |        |    UCSD-NOx   |    75   |    344    |      YES     | Detailed |
+|        |You-2007-Sandiego |    76   |    356    |      YES     | Detailed |
 
 
 
