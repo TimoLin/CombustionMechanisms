@@ -1,3 +1,9 @@
+# 2020/05/05 11:44:16  zt
+
+'''
+Based on: https://groups.google.com/g/cantera-users/c/67860KYm6JY/m/gwsOb9_DAwAJ
+'''
+
 from __future__ import print_function
 from __future__ import division
 
